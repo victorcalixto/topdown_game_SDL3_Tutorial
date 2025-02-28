@@ -1,0 +1,40 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "map.tmx": {
+            "scale": 1.1153,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 234.46606294270597,
+                "y": 137.6311306374966
+            }
+        },
+        "map.tmx#Overworld_Tileset": {
+            "scaleInDock": 1.0813
+        }
+    },
+    "last.exportedFilePath": "/home/klx/sdl-tuto/topdown_game/tiled",
+    "last.imagePath": "/home/klx/sdl-tuto/topdown_game/assets",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "map.tmx"
+    ],
+    "project": "topdown.tiled-project",
+    "recentFiles": [
+        "map.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
