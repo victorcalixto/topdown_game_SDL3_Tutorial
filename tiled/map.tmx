@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
  <tileset firstgid="1" name="Overworld_Tileset" tilewidth="16" tileheight="16" tilecount="234" columns="18">
-  <image source="./assets/Overworld_Tileset.png" width="288" height="208"/>
+  <image source="../Overworld_Tileset.png" width="288" height="208"/>
  </tileset>
  <layer id="1" name="grass" width="30" height="20">
   <data encoding="csv">

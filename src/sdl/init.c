@@ -13,7 +13,7 @@ SDL_AppResult SDL_AppInit(void **appstate,int argc, char **argv){
     "SDL3_Game",
     800,
     600,
-    SDL_WINDOW_RESIZABLE
+    0
   );
 
   if (!state->window){

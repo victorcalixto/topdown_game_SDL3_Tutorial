@@ -19,18 +19,18 @@ static void update(float delta_time){
   const _Bool *keyboard_state = SDL_GetKeyboardState(NULL);
 
   if (keyboard_state[SDL_SCANCODE_W]){
-    position.y -= 1 * delta_time;
-  };
+    position.y -= 30 * delta_time;
+  }
 
     if (keyboard_state[SDL_SCANCODE_S]){
     position.y += 30 * delta_time;
-  };
+  }
   if (keyboard_state[SDL_SCANCODE_A]){
     position.x -= 30 * delta_time;
-  };
+  }
   if (keyboard_state[SDL_SCANCODE_D]){
     position.x += 30 * delta_time;
-  };
+  }
 
 }
 static void render(SDL_Renderer* renderer){
@@ -41,7 +41,7 @@ static void render(SDL_Renderer* renderer){
 }
 
 Entity init_player(SDL_Renderer* renderer){
-  const char path[]= "./assets/Char_Sprites/char_spritesheet.png";
+  const char path[]= "./char_spritesheet.png";
   player_texture = IMG_LoadTexture(renderer,path);
   
   Entity player={

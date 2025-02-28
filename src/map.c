@@ -1,4 +1,3 @@
-#include <SDL3/SDL_stdinc.h>
 #define CUTE_TILED_IMPLEMENTATION
 #include "map.h"
 
@@ -9,11 +8,11 @@ static cute_tiled_tileset_t* tileset;
 static Texture* texture;
 
 
-void render(SDL_Renderer* renderer){
+static void render(SDL_Renderer* renderer){
   cute_tiled_layer_t*  temp_layer = layer;
   
   while(temp_layer){
-    if(temp_layer -> data){
+    if(!temp_layer -> data){
       temp_layer = temp_layer -> next;
       continue;
     }
@@ -78,7 +77,7 @@ Entity init_map(SDL_Renderer* renderer){
 
   while (tileset){
     current_texture -> texture = IMG_LoadTexture(renderer, tileset -> image.ptr); 
-    SDL_Log("Loading texture from: %s", tileset -> image.ptr);
+    
     if(!current_texture -> texture){
       SDL_Log("Error Loading Texture for Tileset");
 
