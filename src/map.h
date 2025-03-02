@@ -13,7 +13,7 @@ typedef struct Texture {
   struct Texture* next;
 }Texture;
 
-Entity init_map(SDL_Renderer* renderer);
+void init_map(SDL_Renderer* renderer);
 
 
 

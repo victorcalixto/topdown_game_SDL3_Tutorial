@@ -61,7 +61,7 @@ static void render(SDL_Renderer* renderer){
   }
 }
 
-Entity init_map(SDL_Renderer* renderer){
+void init_map(SDL_Renderer* renderer){
   const char map_path[] = "./tiled/map.json";
   map = cute_tiled_load_map_from_file(map_path,NULL);
 
@@ -80,10 +80,10 @@ Entity init_map(SDL_Renderer* renderer){
     
     if(!current_texture -> texture){
       SDL_Log("Error Loading Texture for Tileset");
-
-    }else{
-      SDL_Log("Texture Loaded Sucessfully");
+      continue;
     }
+      SDL_Log("Texture Loaded Sucessfully");
+      SDL_SetTextureScaleMode(current_texture->texture,SDL_SCALEMODE_NEAREST);
     
     current_texture -> firstgid = tileset -> firstgid;
     current_texture -> tilecount = tileset -> tilecount;
@@ -103,5 +103,6 @@ Entity init_map(SDL_Renderer* renderer){
   Entity map_e = {
    .render = render,                          // render has the correct signature, no cast needed
     };
-  return map_e;
+
+  create_entity(map_e);
 }

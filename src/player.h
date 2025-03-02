@@ -4,5 +4,5 @@
 #include <SDL3_image/SDL_image.h>
 #include "entity.h"
 
-Entity init_player(SDL_Renderer* renderer);
+void init_player(SDL_Renderer* renderer);
 
