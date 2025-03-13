@@ -3,7 +3,7 @@
 #include "player.h"
 
 typedef struct {
-  float x,y,w,r;
+  float x,y,w,h;
 }Camera;
 
 extern Camera camera;

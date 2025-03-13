@@ -31,6 +31,7 @@ SDL_AppResult SDL_AppInit(void **appstate,int argc, char **argv){
     
  init_map(state->renderer);
  init_player(state->renderer);
+ init_camera(state->renderer);
 
   //320x180 or 640x320
   SDL_SetRenderLogicalPresentation(state->renderer,320,180,SDL_LOGICAL_PRESENTATION_LETTERBOX);

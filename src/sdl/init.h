@@ -4,4 +4,4 @@
 #include "common.h"
 #include "../player.h"
 #include "../map.h"
-
+#include "../camera.h"
